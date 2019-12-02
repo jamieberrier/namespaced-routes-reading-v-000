@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :stats, only: [:index]
   end
 =end
+  # The namespace method makes the assumption that the path prefix and module name match, saving us some typing.
   namespace :admin do
     resources :stats, only: [:index]
   end
